@@ -1,0 +1,276 @@
+
+.hero{
+    /* margin-top: 5%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 77em; */
+    padding: 24px 12%;
+    /* min-height: 200vh; */
+}
+
+.intro{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 3% 0px;
+}
+
+.int{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.int1{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+.int2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.int2 div{
+    display: flex;
+    gap: 2rem;
+}
+
+.int2 div a{
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+
+.int2 div a.evbtn.c{ 
+    background-color: #2a62fe;
+    color: white;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.int2 div a.evbtn.b{ 
+    color: black;
+    border: 1px solid rgb(209, 209, 209);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+img.eventimg{
+    height: 400px;
+    width: 550px;
+}
+
+
+p.heading{
+    max-width: 500px;
+    font-size: 3.7em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 4.5rem;
+}
+
+
+
+.search{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    /* background-color: ; */
+    gap: 1rem;
+    box-shadow: 1px 1px 2px #7e7e7e;
+    border-radius: 10px;
+}
+
+.searchInputs{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.searchInputs input{
+    width: 28%;
+    /* height: 30px; */
+    padding: 4px 10px;
+    border: 1px solid rgb(223, 223, 223);
+    font-size: 1em;
+}
+
+.searchInputs input:focus{
+    outline: none;
+}
+
+.searchInputs button{
+    padding: 8px 14px;
+    background-color: #2a62fe;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: "Montserrat" , sans-serif;
+}
+
+.searchInputs button:hover{
+    background-color: #013fe9;
+}
+
+.recommendbtn{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(70px,1fr)); */
+    grid-template-columns: repeat(7,1fr);
+    gap: 1.5rem;
+}
+
+.recommendbtn button{
+    max-width: auto;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    background-color: #efecec;
+}
+
+.recommendbtn button:hover{
+    color:#013fe9;
+}
+
+
+.Events{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.loc{
+    display: flex; 
+    gap: 10px;
+    flex-direction: column;
+}
+
+h4{
+    margin: 0px;
+    margin-left: 4px;
+}
+
+.status{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.price{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.evInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+}
+
+.ev{
+    width: 100%;
+    height: 10rem;
+    background-color: cadetblue;
+}
+
+.intro-img{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:767px){
+    .hero{
+        padding: 24px 4%;
+    }
+    .intro{
+        flex-direction: column;
+    }
+
+    p.heading{
+        font-size: 3.7em;
+        line-height: 4rem;
+    }
+
+    img.eventimg{
+        height: 450px;
+        width: 500px;
+    }
+    .int1{
+        gap: 0.8rem;
+        text-align: center;
+        align-items: center;
+    }
+    .int{
+        align-items: center;
+    }
+}
+@media (max-width:460px){
+    .hero{
+        padding: 24px 4%;
+    }
+    .intro{
+        flex-direction: column;
+    }
+
+    .int2 div a{
+        padding: 15px 25px;
+    }
+
+    p.heading{
+        font-size: 2.7em;
+        line-height: 3rem;
+    }
+
+    h3.cpj{
+        font-size: 1.3em;
+    }
+
+    .int1{
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    img.eventimg{
+        height: 300px;
+        width: 350px;
+    }
+    .hiddeninput{
+        display: none;
+    }
+    .searchInputs input{
+        width: 100%;
+    }
+    .recommendbtn{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    .searchInputs{
+        gap: 1rem;
+    }
+}
+
+
+
+

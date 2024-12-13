@@ -1,0 +1,15 @@
+
+button.registernow-btn{
+    background-color: #2a62fe;
+}
+button.registernow-btn:hover{
+    background-color: #000000;
+    cursor: pointer;
+}
+
+@media (max-width: 470px){
+    .eventinfo{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

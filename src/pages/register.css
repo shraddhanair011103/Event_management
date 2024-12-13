@@ -1,0 +1,118 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.formpage{
+    padding: 24px 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.side div{
+    /* position: absolute; */
+    /* margin-left: 2rem; */
+    width: 600px;
+    align-items: center;
+}
+
+.side div h1{
+    font-weight: bold;
+    /* font-family: "Poppins"; */
+}
+
+.side img{
+    height: 50vh;
+    width: 100%;
+    /* object-fit: cover; */
+    border: 1px solid navy;
+    border-radius: 10px;
+}
+
+.form{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input{
+    padding: 12px 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fafafa;
+    color: black;
+    font-weight: 800;
+    border: 1px solid rgb(232, 232, 232);
+}
+
+.form input::placeholder{
+    font-weight: 500;
+}
+
+.form input:hover{
+    outline: 2px solid #408cff;
+}
+
+.form input:focus{
+    outline: 2px solid #408cff;
+}
+
+.form button{
+    padding: 12px 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.form button:hover{
+    /* color: rgb(255, 234, 0); */
+    color: #a0c6fe;
+}
+
+.logo a{
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+
+.page{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.form h1{
+    font-family: "Poppins",sans-serif;
+}
+
+.already a{
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+.already a:hover{
+    color: #408cff;
+}
+
+@media (max-width:1024px) {
+    .formpage{
+        justify-content: center;
+    }
+    .side{
+        display: none;
+    }
+}
+
